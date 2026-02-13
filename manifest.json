@@ -1,6 +1,6 @@
 {
   "name": "RMT App",
-  "short_name": "Milky",
+  "short_name": "MT",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ff758c",
@@ -18,3 +18,4 @@
     }
   ]
 }
+
