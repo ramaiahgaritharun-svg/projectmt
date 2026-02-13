@@ -336,6 +336,14 @@ function yesForever(){
   ring.style.transform="scale(2) rotate(360deg)";
   document.body.style.transform="scale(1.1)";
   setTimeout(()=>{ success.style.opacity="1"; },800);
+}  
+  // Register Service Worker (FIXED PATH)
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker.register("sw.js")
+      .then(reg => console.log("SW registered:", reg.scope))
+      .catch(err => console.log("SW failed:", err));
+  });
 }
 
 // Dodge NO button
@@ -351,3 +359,4 @@ noBtn.addEventListener("touchstart",dodge);
 </script>
 </body>
 </html>
+
